@@ -16,9 +16,9 @@ export function sample1() {
    --- groups keys are categories and value are the original object
    */
   const groups = Object.groupBy(posts, ({ category }) => category);
-  console.log(groups);
-  console.log(Object.keys(groups));
-  console.log(Object.values(groups));
+  console.log('groups',groups);
+  console.log('Object.keys(groups)',Object.keys(groups));
+  console.log('Object.values(groups)',Object.values(groups));
 }
 
 export function sample2() {
@@ -35,9 +35,9 @@ export function sample2() {
    --- groups keys are types and value are the original object
    */
   const groups = Object.groupBy(inventory, ({ type }) => type);
-  console.log(groups);
-  console.log(Object.keys(groups));
-  console.log(Object.values(groups));
+  console.log('groups',groups);
+  console.log('Object.keys(groups)',Object.keys(groups));
+  console.log('Object.values(groups)',Object.values(groups));
 }
 
 export function sample3() {
@@ -56,7 +56,7 @@ export function sample3() {
   const groups = Object.groupBy(inventory, ({ quantity }) => {
     return quantity > 5 ? "big" : "small";
   });
-  console.log(groups);
-  console.log(Object.keys(groups));
-  console.log(Object.values(groups));
+  console.log('groups',groups);
+  console.log('Object.keys(groups)',Object.keys(groups));
+  console.log('Object.values(groups)',Object.values(groups));
 }
